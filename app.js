@@ -1,5 +1,35 @@
 const DATA_BASE = "./data";
 
+// global state to keep task statuses in memory + localStorage
+let state = {
+  dsa: null,
+  java: null,
+  cat: null,
+  overrides: {}, // { "type:id": "Done" }
+};
+
+function loadOverrides() {
+  try {
+    const raw = localStorage.getItem("vyomTaskOverrides");
+    if (!raw) return {};
+    return JSON.parse(raw);
+  } catch (_) {
+    return {};
+  }
+}
+
+function saveOverrides() {
+  try {
+    localStorage.setItem("vyomTaskOverrides", JSON.stringify(state.overrides));
+  } catch (_) {
+    // ignore
+  }
+}
+
+function overrideKey(kind, id) {
+  return `${kind}:${id}`;
+}
+
 async function loadJson(name) {
   try {
     const res = await fetch(`${DATA_BASE}/${name}.json`);
@@ -20,6 +50,11 @@ function setActiveView(viewId) {
   });
 }
 
+function applyStatus(kind, id, originalStatus) {
+  const key = overrideKey(kind, id);
+  return state.overrides[key] || originalStatus || "Not Started";
+}
+
 function statusBadge(status) {
   const s = (status || "Not Started").toLowerCase();
   let cls = "status-not-started";
@@ -32,162 +67,281 @@ function safeList(arr) {
   return Array.isArray(arr) ? arr : [];
 }
 
-function renderDSA(dsa) {
+/* ---------- RENDERERS: TABLE STYLE + SELECT ---------- */
+
+function renderDSA() {
+  const dsa = state.dsa;
   const container = document.getElementById("dsaContainer");
   if (!container || !dsa || !Array.isArray(dsa.steps)) return;
-  container.innerHTML = "";
-  dsa.steps.forEach((step) => {
+
+  let html = `
+    <table class="task-table">
+      <thead>
+        <tr>
+          <th style="width:40px;">#</th>
+          <th>Step / Description</th>
+          <th style="width:120px;">Tags</th>
+          <th style="width:120px;">Status</th>
+          <th style="width:200px;">Links</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  dsa.steps.forEach((step, idx) => {
+    const id = step.id || idx;
+    const status = applyStatus("dsa", id, step.status);
     const res = step.resources || {};
     const links = [];
-    if (res.sheet) links.push(`<a href="${res.sheet}" target="_blank" rel="noreferrer">Striver A2Z Sheet</a>`);
-    if (res.playlist) links.push(`<a href="${res.playlist}" target="_blank" rel="noreferrer">Primary playlist</a>`);
-    if (res.extraPlaylist) links.push(`<a href="${res.extraPlaylist}" target="_blank" rel="noreferrer">Extra playlist</a>`);
-
+    if (res.sheet) links.push(`<a href="${res.sheet}" target="_blank" rel="noreferrer">Sheet</a>`);
+    if (res.playlist) links.push(`<a href="${res.playlist}" target="_blank" rel="noreferrer">Playlist</a>`);
+    if (res.extraPlaylist) links.push(`<a href="${res.extraPlaylist}" target="_blank" rel="noreferrer">Extra</a>`);
     const tags = safeList(step.tags).map((t) => `<span class="chip">${t}</span>`).join("");
 
-    const html = `
-      <article class="list-item">
-        <div class="list-item-header">
-          <div>
-            <strong>${step.name}</strong>
-            <div class="metric-label">${step.description || ""}</div>
-          </div>
-          ${statusBadge(step.status)}
-        </div>
-        ${tags ? `<div class="chip-row">${tags}</div>` : ""}
-        ${links.length ? `<div class="link-row">${links.join(" ")}</div>` : ""}
-      </article>
+    html += `
+      <tr data-kind="dsa" data-id="${id}">
+        <td>${idx + 1}</td>
+        <td>
+          <strong>${step.name}</strong><br>
+          <small>${step.description || ""}</small>
+        </td>
+        <td>
+          <div class="chip-row">${tags || ""}</div>
+        </td>
+        <td>
+          <select class="status-select">
+            <option value="Not Started"${status === "Not Started" ? " selected" : ""}>Not Started</option>
+            <option value="In Progress"${status === "In Progress" ? " selected" : ""}>In Progress</option>
+            <option value="Done"${status === "Done" ? " selected" : ""}>Done</option>
+          </select>
+          <div style="margin-top:4px;">${statusBadge(status)}</div>
+        </td>
+        <td>
+          <div class="link-row">${links.join(" ")}</div>
+        </td>
+      </tr>
     `;
-    container.insertAdjacentHTML("beforeend", html);
   });
+
+  html += "</tbody></table>";
+  container.innerHTML = html;
 }
 
-function renderJava(java) {
+function renderJava() {
+  const java = state.java;
   const container = document.getElementById("javaContainer");
   if (!container || !java || !Array.isArray(java.modules)) return;
-  container.innerHTML = "";
-  java.modules.forEach((m) => {
+
+  let html = `
+    <table class="task-table">
+      <thead>
+        <tr>
+          <th style="width:40px;">#</th>
+          <th>Module / Description</th>
+          <th style="width:120px;">Tags</th>
+          <th style="width:120px;">Status</th>
+          <th style="width:200px;">Links</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  java.modules.forEach((m, idx) => {
+    const id = m.id || idx;
+    const status = applyStatus("java", id, m.status);
     const links = [];
     safeList(m.resources).forEach((r) => {
       if (r.url) links.push(`<a href="${r.url}" target="_blank" rel="noreferrer">${r.label || "Link"}</a>`);
     });
-
     const tags = safeList(m.tags).map((t) => `<span class="chip">${t}</span>`).join("");
 
-    const html = `
-      <article class="list-item">
-        <div class="list-item-header">
-          <div>
-            <strong>${m.name}</strong>
-            <div class="metric-label">${m.description || ""}</div>
-          </div>
-          ${statusBadge(m.status)}
-        </div>
-        ${tags ? `<div class="chip-row">${tags}</div>` : ""}
-        ${links.length ? `<div class="link-row">${links.join(" ")}</div>` : ""}
-      </article>
+    html += `
+      <tr data-kind="java" data-id="${id}">
+        <td>${idx + 1}</td>
+        <td>
+          <strong>${m.name}</strong><br>
+          <small>${m.description || ""}</small>
+        </td>
+        <td><div class="chip-row">${tags || ""}</div></td>
+        <td>
+          <select class="status-select">
+            <option value="Not Started"${status === "Not Started" ? " selected" : ""}>Not Started</option>
+            <option value="In Progress"${status === "In Progress" ? " selected" : ""}>In Progress</option>
+            <option value="Done"${status === "Done" ? " selected" : ""}>Done</option>
+          </select>
+          <div style="margin-top:4px;">${statusBadge(status)}</div>
+        </td>
+        <td><div class="link-row">${links.join(" ")}</div></td>
+      </tr>
     `;
-    container.insertAdjacentHTML("beforeend", html);
   });
+
+  html += "</tbody></table>";
+  container.innerHTML = html;
 }
 
-function renderCAT(cat) {
+function renderCAT() {
+  const cat = state.cat;
   const container = document.getElementById("catContainer");
   if (!container || !cat) return;
-  container.innerHTML = "";
-  [
+
+  const sections = [
     ["QA", cat.qaTopics],
     ["DILR", cat.dilrTopics],
     ["VARC", cat.varcTopics],
-  ].forEach(([section, topics]) => {
-    if (!Array.isArray(topics) || !topics.length) return;
-    const heading = `<h2 style="margin:8px 0 4px;font-size:14px;">${section}</h2>`;
-    container.insertAdjacentHTML("beforeend", heading);
-    topics.forEach((t) => {
-      const links = [];
-      safeList(t.youtube).forEach((r) => {
-        if (r.url) links.push(`<a href="${r.url}" target="_blank" rel="noreferrer">${r.label || "Video"}</a>`);
-      });
-      safeList(t.practice).forEach((r) => {
-        if (r.url) links.push(`<a href="${r.url}" target="_blank" rel="noreferrer">${r.label || "Practice"}</a>`);
-      });
-      safeList(t.reading).forEach((r) => {
-        if (r.url) links.push(`<a href="${r.url}" target="_blank" rel="noreferrer">${r.label || "Reading"}</a>`);
-      });
+  ];
 
-      const html = `
-        <article class="list-item">
-          <div class="list-item-header">
-            <div>
-              <strong>${t.topic}</strong>
-              <div class="metric-label">Weightage: ${t.weightage || "-"}</div>
-            </div>
-            ${statusBadge(t.status)}
-          </div>
-          ${links.length ? `<div class="link-row">${links.join(" ")}</div>` : ""}
-        </article>
+  let html = "";
+
+  sections.forEach(([label, topics]) => {
+    if (!Array.isArray(topics) || !topics.length) return;
+    html += `<h2 style="margin:8px 0 4px;font-size:14px;">${label}</h2>`;
+    html += `
+      <table class="task-table">
+        <thead>
+          <tr>
+            <th style="width:40px;">#</th>
+            <th>Topic</th>
+            <th style="width:80px;">Weightage</th>
+            <th style="width:120px;">Status</th>
+            <th style="width:220px;">Links</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+    topics.forEach((t, idx) => {
+      const id = t.id || `${label}-${idx}`;
+      const status = applyStatus("cat", id, t.status);
+      const links = [];
+      safeList(t.youtube).forEach((r) => r.url && links.push(`<a href="${r.url}" target="_blank" rel="noreferrer">${r.label || "Video"}</a>`));
+      safeList(t.practice).forEach((r) => r.url && links.push(`<a href="${r.url}" target="_blank" rel="noreferrer">${r.label || "Practice"}</a>`));
+      safeList(t.reading).forEach((r) => r.url && links.push(`<a href="${r.url}" target="_blank" rel="noreferrer">${r.label || "Reading"}</a>`));
+
+      html += `
+        <tr data-kind="cat" data-id="${id}">
+          <td>${idx + 1}</td>
+          <td>${t.topic}</td>
+          <td>${t.weightage || "-"}</td>
+          <td>
+            <select class="status-select">
+              <option value="Not Started"${status === "Not Started" ? " selected" : ""}>Not Started</option>
+              <option value="In Progress"${status === "In Progress" ? " selected" : ""}>In Progress</option>
+              <option value="Done"${status === "Done" ? " selected" : ""}>Done</option>
+            </select>
+            <div style="margin-top:4px;">${statusBadge(status)}</div>
+          </td>
+          <td><div class="link-row">${links.join(" ")}</div></td>
+        </tr>
       `;
-      container.insertAdjacentHTML("beforeend", html);
     });
+    html += "</tbody></table>";
   });
+
+  container.innerHTML = html;
 }
 
 function renderMocks(mocks) {
   const container = document.getElementById("mocksContainer");
   if (!container || !mocks) return;
-  container.innerHTML = "";
   const all = [
     ...(Array.isArray(mocks.catMocks) ? mocks.catMocks : []),
     ...(Array.isArray(mocks.placementMocks) ? mocks.placementMocks : []),
   ];
-  all.forEach((m) => {
-    const html = `
-      <article class="list-item">
-        <div class="list-item-header">
-          <div>
-            <strong>${m.name}</strong>
-            <div class="metric-label">Provider: ${m.provider || "-"}</div>
+  if (!all.length) {
+    container.textContent = "No mocks configured yet.";
+    return;
+  }
+  let html = `
+    <table class="task-table">
+      <thead>
+        <tr>
+          <th style="width:40px;">#</th>
+          <th>Mock Name</th>
+          <th style="width:120px;">Provider</th>
+          <th style="width:120px;">Status</th>
+          <th style="width:200px;">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+  all.forEach((m, idx) => {
+    const id = m.id || idx;
+    const status = applyStatus("mock", id, m.status);
+    html += `
+      <tr data-kind="mock" data-id="${id}">
+        <td>${idx + 1}</td>
+        <td>${m.name}</td>
+        <td>${m.provider || "-"}</td>
+        <td>${statusBadge(status)}</td>
+        <td>
+          <div class="link-row">
+            ${m.url ? `<a href="${m.url}" target="_blank" rel="noreferrer">Open</a>` : ""}
           </div>
-          ${statusBadge(m.status)}
-        </div>
-        <div class="link-row">
-          ${m.url ? `<a href="${m.url}" target="_blank" rel="noreferrer">Open</a>` : ""}
-        </div>
-      </article>
+        </td>
+      </tr>
     `;
-    container.insertAdjacentHTML("beforeend", html);
   });
+  html += "</tbody></table>";
+  container.innerHTML = html;
 }
 
 function renderResources(resources) {
   const container = document.getElementById("resourcesContainer");
   if (!container || !Array.isArray(resources.items)) return;
-  container.innerHTML = "";
-  resources.items.forEach((r) => {
-    const html = `
-      <article class="list-item">
-        <div class="list-item-header">
-          <div>
-            <strong>${r.name}</strong>
-            <div class="metric-label">${r.description || ""}</div>
+  const items = resources.items;
+  if (!items.length) {
+    container.textContent = "No resources configured yet.";
+    return;
+  }
+  let html = `
+    <table class="task-table">
+      <thead>
+        <tr>
+          <th style="width:40px;">#</th>
+          <th>Resource</th>
+          <th style="width:100px;">Track</th>
+          <th style="width:260px;">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+  items.forEach((r, idx) => {
+    html += `
+      <tr>
+        <td>${idx + 1}</td>
+        <td>
+          <strong>${r.name}</strong><br>
+          <small>${r.description || ""}</small>
+        </td>
+        <td>${r.track || "General"}</td>
+        <td>
+          <div class="link-row">
+            ${r.url ? `<a href="${r.url}" target="_blank" rel="noreferrer">Open</a>` : ""}
           </div>
-          <span class="badge">${r.track || "General"}</span>
-        </div>
-        <div class="link-row">
-          ${r.url ? `<a href="${r.url}" target="_blank" rel="noreferrer">Open</a>` : ""}
-        </div>
-      </article>
+        </td>
+      </tr>
     `;
-    container.insertAdjacentHTML("beforeend", html);
   });
+  html += "</tbody></table>";
+  container.innerHTML = html;
 }
 
-function computeSummary(dsa, java, cat) {
+/* ---------- SUMMARY + PLAN ---------- */
+
+function computeSummary() {
+  const dsa = state.dsa;
+  const java = state.java;
+  const cat = state.cat;
+
   const dsaCount = dsa && Array.isArray(dsa.steps) ? dsa.steps.length : 0;
-  const dsaDone = dsa && Array.isArray(dsa.steps) ? dsa.steps.filter((s) => (s.status || "").toLowerCase() === "done").length : 0;
+  const dsaDone = dsa && Array.isArray(dsa.steps)
+    ? dsa.steps.filter((s, idx) => applyStatus("dsa", s.id || idx, s.status) === "Done").length
+    : 0;
 
   const javaCount = java && Array.isArray(java.modules) ? java.modules.length : 0;
-  const javaDone = java && Array.isArray(java.modules) ? java.modules.filter((m) => (m.status || "").toLowerCase() === "done").length : 0;
+  const javaDone = java && Array.isArray(java.modules)
+    ? java.modules.filter((m, idx) => applyStatus("java", m.id || idx, m.status) === "Done").length
+    : 0;
 
   const catTopics = [
     ...(cat && Array.isArray(cat.qaTopics) ? cat.qaTopics : []),
@@ -195,7 +349,9 @@ function computeSummary(dsa, java, cat) {
     ...(cat && Array.isArray(cat.varcTopics) ? cat.varcTopics : []),
   ];
   const catCount = catTopics.length;
-  const catDone = catTopics.filter((t) => (t.status || "").toLowerCase() === "done").length;
+  const catDone = catTopics.filter((t, idx) =>
+    applyStatus("cat", t.id || idx, t.status) === "Done"
+  ).length;
 
   document.getElementById("dsaSummary").innerHTML = `
     <h2>DSA</h2>
@@ -220,41 +376,49 @@ function computeSummary(dsa, java, cat) {
   `;
 }
 
-function generatePlan(dsa, java, cat) {
+function generatePlan() {
+  const dsa = state.dsa || { steps: [] };
+  const java = state.java || { modules: [] };
+  const cat = state.cat || { qaTopics: [], dilrTopics: [], varcTopics: [] };
+
   const hoursInput = document.getElementById("hoursInput");
   const modeSelect = document.getElementById("prioritySelect");
   const planBox = document.getElementById("todayPlan");
+
   const hours = Math.max(1, Number(hoursInput.value) || 1);
   const mode = modeSelect.value;
 
   const tasks = [];
 
-  if (dsa && Array.isArray(dsa.steps)) {
+  if (Array.isArray(dsa.steps)) {
     dsa.steps
-      .filter((s) => (s.status || "").toLowerCase() !== "done")
+      .map((s, idx) => ({ step: s, idx }))
+      .filter(({ step, idx }) => applyStatus("dsa", step.id || idx, step.status) !== "Done")
       .slice(0, 5)
-      .forEach((s) => tasks.push({ track: "DSA", label: s.name }));
+      .forEach(({ step }) => tasks.push({ track: "DSA", label: step.name }));
   }
 
-  if (java && Array.isArray(java.modules)) {
+  if (Array.isArray(java.modules)) {
     java.modules
-      .filter((m) => (m.status || "").toLowerCase() !== "done")
+      .map((m, idx) => ({ mod: m, idx }))
+      .filter(({ mod, idx }) => applyStatus("java", mod.id || idx, mod.status) !== "Done")
       .slice(0, 5)
-      .forEach((m) => tasks.push({ track: "Java", label: m.name }));
+      .forEach(({ mod }) => tasks.push({ track: "Java", label: mod.name }));
   }
 
   const catTopics = [
-    ...(cat && Array.isArray(cat.qaTopics) ? cat.qaTopics : []),
-    ...(cat && Array.isArray(cat.dilrTopics) ? cat.dilrTopics : []),
-    ...(cat && Array.isArray(cat.varcTopics) ? cat.varcTopics : []),
+    ...(Array.isArray(cat.qaTopics) ? cat.qaTopics.map((t, i) => ({ t, id: `QA-${i}` })) : []),
+    ...(Array.isArray(cat.dilrTopics) ? cat.dilrTopics.map((t, i) => ({ t, id: `DILR-${i}` })) : []),
+    ...(Array.isArray(cat.varcTopics) ? cat.varcTopics.map((t, i) => ({ t, id: `VARC-${i}` })) : []),
   ];
+
   catTopics
-    .filter((t) => (t.status || "").toLowerCase() !== "done")
+    .filter(({ t, id }) => applyStatus("cat", t.id || id, t.status) !== "Done")
     .slice(0, 6)
-    .forEach((t) => tasks.push({ track: "CAT", label: t.topic }));
+    .forEach(({ t }) => tasks.push({ track: "CAT", label: t.topic }));
 
   if (!tasks.length) {
-    planBox.textContent = "No tasks defined yet. Add items in JSON under data/.";
+    planBox.textContent = "No pending tasks. Either JSON is empty or everything is Done.";
     return;
   }
 
@@ -263,8 +427,8 @@ function generatePlan(dsa, java, cat) {
   if (mode === "cat-heavy") weights = { DSA: 1, Java: 1, CAT: 2 };
 
   const totalWeight = weights.DSA + weights.Java + weights.CAT;
-  const slotMinutes = hours * 60;
-  const perWeight = slotMinutes / totalWeight;
+  const totalMinutes = hours * 60;
+  const perWeight = totalMinutes / totalWeight;
 
   const segments = [
     { track: "DSA", minutes: Math.round(perWeight * weights.DSA) },
@@ -274,7 +438,7 @@ function generatePlan(dsa, java, cat) {
 
   const lines = segments.map((seg) => {
     const segTasks = tasks.filter((t) => t.track === seg.track).slice(0, 3);
-    if (!segTasks.length) return `${seg.track}: ${seg.minutes} min (no tasks defined)`;
+    if (!segTasks.length) return `${seg.track}: ${seg.minutes} min (no tasks pending)`;
     const list = segTasks.map((t) => `- ${t.label}`).join("\n");
     return `${seg.track}: ~${seg.minutes} min\n${list}`;
   });
@@ -282,31 +446,18 @@ function generatePlan(dsa, java, cat) {
   planBox.innerHTML = lines.join("\n\n").replace(/\n/g, "<br>");
 }
 
-async function init() {
-  const [dsa, java, cat, mocks, resources] = await Promise.all([
-    loadJson("dsa_topics"),
-    loadJson("java_topics"),
-    loadJson("cat_topics"),
-    loadJson("mock_tests"),
-    loadJson("resources"),
-  ]);
+/* ---------- EVENT BINDING & INIT ---------- */
 
-  renderDSA(dsa || { steps: [] });
-  renderJava(java || { modules: [] });
-  renderCAT(cat || { qaTopics: [], dilrTopics: [], varcTopics: [] });
-  renderMocks(mocks || { catMocks: [], placementMocks: [] });
-  renderResources(resources || { items: [] });
-  computeSummary(dsa || { steps: [] }, java || { modules: [] }, cat || {});
+function bindStatusChange() {
+  // delegated listener for all status-select elements
+  document.addEventListener("change", (e) => {
+    const select = e.target;
+    if (!select.classList.contains("status-select")) return;
+    const tr = select.closest("tr");
+    if (!tr) return;
+    const kind = tr.dataset.kind;
+    const id = tr.dataset.id;
+    if (!kind || id === undefined) return;
 
-  generatePlan(dsa || { steps: [] }, java || { modules: [] }, cat || {});
-
-  document.querySelectorAll(".nav-btn").forEach((btn) => {
-    btn.addEventListener("click", () => setActiveView(btn.dataset.view));
-  });
-
-  document.getElementById("generatePlanBtn").addEventListener("click", () => {
-    generatePlan(dsa || { steps: [] }, java || { modules: [] }, cat || {});
-  });
-}
-
-window.addEventListener("DOMContentLoaded", init);
+    const value = select.value;
+    cons
