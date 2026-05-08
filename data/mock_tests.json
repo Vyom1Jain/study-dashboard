@@ -1,1 +1,20 @@
-<YOUR EXISTING mock_tests.json CONTENT WILL BE PRESERVED HERE>
+{
+  "catMocks": [
+    {
+      "id": "CAT-MOCK-1",
+      "name": "Cracku Free CAT Mock",
+      "provider": "Cracku",
+      "url": "https://cracku.in/cat-mock-test",
+      "status": "Not Started"
+    }
+  ],
+  "placementMocks": [
+    {
+      "id": "INFY-1",
+      "name": "Infosys SP/DSE style coding practice",
+      "provider": "LeetCode / custom list",
+      "url": "https://leetcode.com/problemset/all/",
+      "status": "Not Started"
+    }
+  ]
+}

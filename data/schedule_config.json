@@ -1,1 +1,20 @@
-<YOUR EXISTING schedule_config.json CONTENT WILL BE PRESERVED HERE>
+{
+  "notes": "Fill actual target dates here when you finalize them.",
+  "deadlines": {
+    "dsaTarget": "",
+    "catExam": "",
+    "placementSeasonStart": ""
+  },
+  "phases": [
+    {
+      "name": "Foundations",
+      "description": "Focus on DSA basics + Java fundamentals.",
+      "tracks": ["DSA", "Java"]
+    },
+    {
+      "name": "CAT Intensive",
+      "description": "Higher weight to CAT QA/DILR/VARC while maintaining DSA streak.",
+      "tracks": ["CAT", "DSA"]
+    }
+  ]
+}

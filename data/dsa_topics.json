@@ -1,1 +1,36 @@
-<YOUR EXISTING dsa_topics.json CONTENT WILL BE PRESERVED HERE>
+{
+  "steps": [
+    {
+      "id": 1,
+      "name": "Basics (A2Z Step 1)",
+      "description": "Input/output, loops, patterns, basic math.",
+      "status": "Not Started",
+      "tags": ["Basics"],
+      "resources": {
+        "sheet": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+        "playlist": "https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Sorting & Arrays (A2Z Steps 2-3)",
+      "description": "Sorting techniques, easy/mid array problems.",
+      "status": "Not Started",
+      "tags": ["Arrays", "Sorting"],
+      "resources": {
+        "sheet": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+        "playlist": "https://www.youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Binary Search & Strings",
+      "description": "Binary search on 1D/2D arrays, basic string problems.",
+      "status": "Not Started",
+      "tags": ["Binary Search", "Strings"],
+      "resources": {
+        "sheet": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+      }
+    }
+  ]
+}

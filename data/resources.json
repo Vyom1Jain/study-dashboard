@@ -1,1 +1,52 @@
-<YOUR EXISTING resources.json CONTENT WILL BE PRESERVED HERE>
+{
+  "items": [
+    {
+      "name": "Striver A2Z DSA Sheet",
+      "track": "DSA",
+      "description": "Full roadmap for DSA from basics to advanced.",
+      "url": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+    },
+    {
+      "name": "Striver A2Z YouTube Playlist",
+      "track": "DSA",
+      "description": "Companion videos for the A2Z DSA sheet.",
+      "url": "https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ"
+    },
+    {
+      "name": "Striver SDE Sheet Playlist",
+      "track": "DSA",
+      "description": "Focused interview DSA problems.",
+      "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz"
+    },
+    {
+      "name": "Durgesh - Java & Spring",
+      "track": "Java",
+      "description": "Java, Spring Boot and full-stack content.",
+      "url": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists"
+    },
+    {
+      "name": "Chetan Ghate - Spring Boot",
+      "track": "Java",
+      "description": "Focused playlists for Spring Boot projects.",
+      "url": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists"
+    },
+    {
+      "name": "iQuanta CAT Daily Target",
+      "track": "CAT",
+      "description": "Daily practice for QA / DILR / VARC.",
+      "url": "https://www.iquanta.in/cat-daily-target"
+    },
+    {
+      "name": "Cracku CAT Daily Target",
+      "track": "CAT",
+      "description": "Extra CAT practice sets and mocks.",
+      "url": "https://cracku.in/cat-daily-target"
+    },
+    {
+      "name": "Rodha YouTube Channel",
+      "track": "CAT",
+      "description": "Concept lectures for QA, DILR and VARC.",
+      "url": "https://www.youtube.com/@Rodha"
+    }
+  ]
+}

@@ -1,1 +1,84 @@
-<YOUR EXISTING cat_topics.json CONTENT WILL BE PRESERVED HERE>
+{
+  "qaTopics": [
+    {
+      "id": "QA-1",
+      "topic": "Number System",
+      "weightage": "High",
+      "status": "Not Started",
+      "youtube": [
+        {
+          "label": "Rodha - Number System",
+          "url": "https://www.youtube.com/@Rodha"
+        }
+      ],
+      "practice": [
+        {
+          "label": "iQuanta Daily Target",
+          "url": "https://www.iquanta.in/cat-daily-target"
+        },
+        {
+          "label": "Cracku Daily Target",
+          "url": "https://cracku.in/cat-daily-target"
+        }
+      ]
+    },
+    {
+      "id": "QA-2",
+      "topic": "Percentages & Profit/Loss",
+      "weightage": "Medium",
+      "status": "Not Started",
+      "youtube": [
+        {
+          "label": "Rodha - Percentages",
+          "url": "https://www.youtube.com/@Rodha"
+        }
+      ]
+    }
+  ],
+  "dilrTopics": [
+    {
+      "id": "DL-1",
+      "topic": "Seating Arrangements",
+      "weightage": "High",
+      "status": "Not Started",
+      "youtube": [
+        {
+          "label": "Rodha - DILR",
+          "url": "https://www.youtube.com/@Rodha"
+        }
+      ],
+      "practice": [
+        {
+          "label": "Cracku DILR Sets",
+          "url": "https://cracku.in/cat-daily-target"
+        }
+      ]
+    }
+  ],
+  "varcTopics": [
+    {
+      "id": "VA-1",
+      "topic": "Reading Comprehension",
+      "weightage": "Very High",
+      "status": "Not Started",
+      "youtube": [
+        {
+          "label": "Rodha - VARC / RC",
+          "url": "https://www.youtube.com/@Rodha"
+        }
+      ],
+      "practice": [
+        {
+          "label": "iQuanta VARC practice",
+          "url": "https://www.iquanta.in/cat-daily-target"
+        }
+      ],
+      "reading": [
+        {
+          "label": "The Hindu Editorials",
+          "url": "https://www.thehindu.com/opinion/editorial/"
+        }
+      ]
+    }
+  ]
+}

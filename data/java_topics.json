@@ -1,1 +1,64 @@
-<YOUR EXISTING java_topics.json CONTENT WILL BE PRESERVED HERE>
+{
+  "modules": [
+    {
+      "id": 1,
+      "name": "Spring & Spring Boot Fundamentals",
+      "description": "IOC, beans, dependency injection, project structure, auto-configuration.",
+      "status": "Not Started",
+      "tags": ["Spring", "Basics"],
+      "resources": [
+        {
+          "label": "Durgesh - Spring Boot Basics",
+          "url": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists"
+        },
+        {
+          "label": "Spring Core Concepts (docs)",
+          "url": "https://docs.spring.io/spring-framework/reference/core.html"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "REST APIs with Spring Boot",
+      "description": "Controllers, RequestMapping, ResponseEntity, validation, exception handling.",
+      "status": "Not Started",
+      "tags": ["REST", "HTTP"],
+      "resources": [
+        {
+          "label": "Durgesh - Spring REST playlist",
+          "url": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists"
+        },
+        {
+          "label": "Chetan Ghate - Spring Boot REST",
+          "url": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Spring Data JPA & Databases",
+      "description": "Repositories, entities, relationships, MySQL/Postgres integration.",
+      "status": "Not Started",
+      "tags": ["JPA", "Database"],
+      "resources": [
+        {
+          "label": "Spring Data JPA Reference",
+          "url": "https://docs.spring.io/spring-data/jpa/reference/"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Spring Security (Auth & JWT)",
+      "description": "Authentication, authorization, filters, JWT based login.",
+      "status": "Not Started",
+      "tags": ["Security", "JWT"],
+      "resources": [
+        {
+          "label": "Durgesh - Spring Security & JWT",
+          "url": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists"
+        }
+      ]
+    }
+  ]
+}
