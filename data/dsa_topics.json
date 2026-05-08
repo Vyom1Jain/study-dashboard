@@ -1,36 +1,307 @@
 {
+  "meta": {
+    "source": "Striver A2Z DSA Sheet",
+    "playlist": "https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ",
+    "sheet": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+    "sdeSheet": "https://www.youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz",
+    "total": 474
+  },
   "steps": [
     {
       "id": 1,
-      "name": "Basics (A2Z Step 1)",
-      "description": "Input/output, loops, patterns, basic math.",
-      "status": "Not Started",
-      "tags": ["Basics"],
-      "resources": {
-        "sheet": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-        "playlist": "https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ"
-      }
+      "title": "Learn the Basics",
+      "topics": [
+        { "id": "1.1", "name": "User Input/Output", "difficulty": "Easy", "leetcode": "", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "1.2", "name": "Data Types in Java", "difficulty": "Easy", "leetcode": "", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "1.3", "name": "If-Else / Switch Statements", "difficulty": "Easy", "leetcode": "", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "1.4", "name": "Loops (for/while/do-while)", "difficulty": "Easy", "leetcode": "", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "1.5", "name": "Patterns (Star, Number)", "difficulty": "Easy", "leetcode": "", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "1.6", "name": "Functions & Methods", "difficulty": "Easy", "leetcode": "", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "1.7", "name": "Arrays Basics", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/running-sum-of-1d-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "1.8", "name": "String Basics", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/reverse-string/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "1.9", "name": "Basic Maths (GCD, LCM, Prime)", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/count-primes/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "1.10", "name": "Recursion Basics", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/power-of-two/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
     },
     {
       "id": 2,
-      "name": "Sorting & Arrays (A2Z Steps 2-3)",
-      "description": "Sorting techniques, easy/mid array problems.",
-      "status": "Not Started",
-      "tags": ["Arrays", "Sorting"],
-      "resources": {
-        "sheet": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-        "playlist": "https://www.youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz"
-      }
+      "title": "Sorting Techniques",
+      "topics": [
+        { "id": "2.1", "name": "Selection Sort", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/sort-an-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "2.2", "name": "Bubble Sort", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/sort-an-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "2.3", "name": "Insertion Sort", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/insertion-sort-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "2.4", "name": "Merge Sort", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/sort-an-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "2.5", "name": "Quick Sort", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/sort-an-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "2.6", "name": "Recursive Bubble Sort", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/sort-an-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
     },
     {
       "id": 3,
-      "name": "Binary Search & Strings",
-      "description": "Binary search on 1D/2D arrays, basic string problems.",
-      "status": "Not Started",
-      "tags": ["Binary Search", "Strings"],
-      "resources": {
-        "sheet": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-      }
+      "title": "Arrays",
+      "topics": [
+        { "id": "3.1", "name": "Largest Element in Array", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/find-the-highest-altitude/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.2", "name": "Second Largest Element", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/second-largest-digit-in-a-string/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.3", "name": "Check Sorted Array", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.4", "name": "Remove Duplicates (Sorted)", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.5", "name": "Left Rotate Array by One", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/rotate-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.6", "name": "Rotate Array by K Places", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/rotate-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.7", "name": "Move Zeros to End", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/move-zeroes/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.8", "name": "Linear Search", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/find-target-indices-after-sorting-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.9", "name": "Union of Two Sorted Arrays", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/union-find/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.10", "name": "Intersection of Two Arrays", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/intersection-of-two-arrays/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.11", "name": "Missing Number", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/missing-number/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.12", "name": "Maximum Consecutive Ones", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/max-consecutive-ones/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.13", "name": "Single Number", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/single-number/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.14", "name": "Longest Subarray with Sum K", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/subarray-sum-equals-k/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.15", "name": "Two Sum", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/two-sum/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.16", "name": "Sort Colors (Dutch National Flag)", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/sort-colors/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.17", "name": "Majority Element (>n/2)", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/majority-element/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.18", "name": "Kadane's Algorithm (Max Subarray)", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/maximum-subarray/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.19", "name": "Stock Buy & Sell", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.20", "name": "Rearrange Positives and Negatives", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/rearrange-array-elements-by-sign/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.21", "name": "Next Permutation", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/next-permutation/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.22", "name": "Longest Consecutive Sequence", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/longest-consecutive-sequence/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.23", "name": "Set Matrix Zeroes", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/set-matrix-zeroes/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.24", "name": "Rotate Matrix 90 Degrees", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/rotate-image/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.25", "name": "Spiral Order Matrix", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/spiral-matrix/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.26", "name": "Pascal's Triangle", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/pascals-triangle/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.27", "name": "Majority Element (>n/3)", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/majority-element-ii/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.28", "name": "3 Sum", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/3sum/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.29", "name": "4 Sum", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/4sum/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.30", "name": "Largest Subarray with Zero Sum", "difficulty": "Medium", "leetcode": "https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.31", "name": "Count Subarrays with XOR=K", "difficulty": "Hard", "leetcode": "https://practice.geeksforgeeks.org/problems/count-subarray-with-given-xor/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.32", "name": "Merge Overlapping Intervals", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/merge-intervals/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.33", "name": "Merge Two Sorted Arrays Without Space", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/merge-sorted-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.34", "name": "Find Duplicate in Array", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/find-the-duplicate-number/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.35", "name": "Count Inversions", "difficulty": "Hard", "leetcode": "https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.36", "name": "Reverse Pairs", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/reverse-pairs/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "3.37", "name": "Maximum Product Subarray", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/maximum-product-subarray/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Binary Search",
+      "topics": [
+        { "id": "4.1", "name": "Binary Search on 1D Array", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/binary-search/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.2", "name": "Lower Bound / Upper Bound", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.3", "name": "Search Insert Position", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/search-insert-position/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.4", "name": "Floor/Ceil in Sorted Array", "difficulty": "Easy", "leetcode": "https://practice.geeksforgeeks.org/problems/floor-in-a-sorted-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.5", "name": "Count Occurrences in Sorted Array", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.6", "name": "Search in Rotated Sorted Array", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/search-in-rotated-sorted-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.7", "name": "Minimum in Rotated Sorted Array", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.8", "name": "Kth Missing Positive Number", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/kth-missing-positive-number/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.9", "name": "Aggressive Cows", "difficulty": "Hard", "leetcode": "https://practice.geeksforgeeks.org/problems/aggressive-cows/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.10", "name": "Book Allocation Problem", "difficulty": "Hard", "leetcode": "https://practice.geeksforgeeks.org/problems/allocate-minimum-number-of-pages/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.11", "name": "Find Peak Element", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/find-peak-element/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.12", "name": "Square Root using Binary Search", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/sqrtx/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.13", "name": "Kth Element of Two Sorted Arrays", "difficulty": "Hard", "leetcode": "https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "4.14", "name": "Median of Two Sorted Arrays", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/median-of-two-sorted-arrays/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Strings",
+      "topics": [
+        { "id": "5.1", "name": "Reverse Words in String", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/reverse-words-in-a-string/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "5.2", "name": "Longest Palindromic Substring", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/longest-palindromic-substring/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "5.3", "name": "Roman to Integer", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/roman-to-integer/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "5.4", "name": "Implement strStr (Needle in Haystack)", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "5.5", "name": "Longest Common Prefix", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/longest-common-prefix/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "5.6", "name": "Anagram Check", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/valid-anagram/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "5.7", "name": "Count & Say", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/count-and-say/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "5.8", "name": "KMP Algorithm", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "5.9", "name": "Minimum Window Substring", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/minimum-window-substring/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "5.10", "name": "Rabin-Karp Algorithm", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/repeated-string-match/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Linked List",
+      "topics": [
+        { "id": "6.1", "name": "Linked List Intro + Traversal", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/linked-list-cycle/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.2", "name": "Insert at Head/Tail/Position", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.3", "name": "Delete Node in Linked List", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/delete-node-in-a-linked-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.4", "name": "Reverse Linked List", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/reverse-linked-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.5", "name": "Middle of Linked List", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/middle-of-the-linked-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.6", "name": "Merge Two Sorted Lists", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/merge-two-sorted-lists/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.7", "name": "Detect Cycle in Linked List", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/linked-list-cycle-ii/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.8", "name": "Find Length of Cycle", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/linked-list-cycle-ii/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.9", "name": "Remove Nth Node from End", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.10", "name": "Delete Middle Node", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.11", "name": "Sort Linked List (Merge Sort)", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/sort-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.12", "name": "Odd-Even Linked List", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/odd-even-linked-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.13", "name": "Palindrome Linked List", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/palindrome-linked-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.14", "name": "LRU Cache Design", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/lru-cache/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "6.15", "name": "Reverse Nodes in K-Group", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/reverse-nodes-in-k-group/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Recursion & Backtracking",
+      "topics": [
+        { "id": "7.1", "name": "Fibonacci using Recursion", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/fibonacci-number/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "7.2", "name": "Subsets (Power Set)", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/subsets/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "7.3", "name": "Permutations of String", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/permutations/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "7.4", "name": "N-Queens Problem", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/n-queens/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "7.5", "name": "Sudoku Solver", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/sudoku-solver/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "7.6", "name": "Combination Sum", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/combination-sum/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "7.7", "name": "Combination Sum II", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/combination-sum-ii/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "7.8", "name": "Palindrome Partitioning", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/palindrome-partitioning/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "7.9", "name": "Word Search", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/word-search/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "7.10", "name": "Rat in a Maze", "difficulty": "Medium", "leetcode": "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Bit Manipulation",
+      "topics": [
+        { "id": "8.1", "name": "Bit Manipulation Basics", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/number-of-1-bits/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "8.2", "name": "Check if Number is Power of 2", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/power-of-two/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "8.3", "name": "Count Set Bits", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/counting-bits/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "8.4", "name": "XOR of Numbers in Range", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/single-number/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "8.5", "name": "Divide Two Integers without /", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/divide-two-integers/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Stacks & Queues",
+      "topics": [
+        { "id": "9.1", "name": "Implement Stack using Array", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/implement-stack-using-queues/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "9.2", "name": "Implement Queue using Array", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/implement-queue-using-stacks/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "9.3", "name": "Valid Parentheses", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/valid-parentheses/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "9.4", "name": "Next Greater Element", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/next-greater-element-i/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "9.5", "name": "Trapping Rainwater", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/trapping-rain-water/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "9.6", "name": "Sum of Subarray Minimums", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/sum-of-subarray-minimums/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "9.7", "name": "Largest Rectangle in Histogram", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/largest-rectangle-in-histogram/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "9.8", "name": "Sliding Window Maximum", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/sliding-window-maximum/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "9.9", "name": "Min Stack", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/min-stack/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "9.10", "name": "LFU Cache", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/lfu-cache/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Sliding Window & Two Pointer",
+      "topics": [
+        { "id": "10.1", "name": "Longest Substring Without Repeating Chars", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/longest-substring-without-repeating-characters/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "10.2", "name": "Max Consecutive Ones III", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/max-consecutive-ones-iii/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "10.3", "name": "Fruit Into Baskets", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/fruit-into-baskets/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "10.4", "name": "Longest Repeating Character Replacement", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/longest-repeating-character-replacement/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "10.5", "name": "Binary Subarray with Sum", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/binary-subarrays-with-sum/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Heaps",
+      "topics": [
+        { "id": "11.1", "name": "Heapify / Heap Operations", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/kth-largest-element-in-an-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "11.2", "name": "Kth Largest Element", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/kth-largest-element-in-an-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "11.3", "name": "Top K Frequent Elements", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/top-k-frequent-elements/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "11.4", "name": "Median from Data Stream", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/find-median-from-data-stream/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "11.5", "name": "Merge K Sorted Lists", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/merge-k-sorted-lists/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Greedy",
+      "topics": [
+        { "id": "12.1", "name": "Assign Cookies", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/assign-cookies/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "12.2", "name": "Jump Game", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/jump-game/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "12.3", "name": "Jump Game II", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/jump-game-ii/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "12.4", "name": "Job Sequencing Problem", "difficulty": "Medium", "leetcode": "https://practice.geeksforgeeks.org/problems/job-sequencing-problem/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "12.5", "name": "Fractional Knapsack", "difficulty": "Medium", "leetcode": "https://practice.geeksforgeeks.org/problems/fractional-knapsack/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "12.6", "name": "Minimum Platforms", "difficulty": "Medium", "leetcode": "https://practice.geeksforgeeks.org/problems/minimum-number-of-platforms-required-for-a-railway/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Trees (Binary Tree + BST)",
+      "topics": [
+        { "id": "13.1", "name": "Inorder, Preorder, Postorder Traversal", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/binary-tree-inorder-traversal/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.2", "name": "Level Order Traversal (BFS)", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/binary-tree-level-order-traversal/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.3", "name": "Height of Binary Tree", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/maximum-depth-of-binary-tree/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.4", "name": "Diameter of Binary Tree", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/diameter-of-binary-tree/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.5", "name": "Balanced Binary Tree Check", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/balanced-binary-tree/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.6", "name": "LCA of Binary Tree", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.7", "name": "Zigzag Level Order Traversal", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.8", "name": "Right/Left View of Binary Tree", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/binary-tree-right-side-view/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.9", "name": "Path Sum", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/path-sum/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.10", "name": "Construct BT from Preorder+Inorder", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.11", "name": "Flatten BT to Linked List", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.12", "name": "Symmetric Tree", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/symmetric-tree/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.13", "name": "BST Insert/Delete/Search", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/insert-into-a-binary-search-tree/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.14", "name": "Validate BST", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/validate-binary-search-tree/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "13.15", "name": "Kth Smallest in BST", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Graphs",
+      "topics": [
+        { "id": "14.1", "name": "BFS of Graph", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/number-of-islands/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.2", "name": "DFS of Graph", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/number-of-islands/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.3", "name": "Detect Cycle in Undirected Graph", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/graph-valid-tree/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.4", "name": "Detect Cycle in Directed Graph", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/course-schedule/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.5", "name": "Topological Sort (DFS/BFS/Kahn's)", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/course-schedule-ii/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.6", "name": "Shortest Path in Undirected Graph", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/shortest-path-in-binary-matrix/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.7", "name": "Dijkstra's Algorithm", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/network-delay-time/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.8", "name": "Bellman-Ford Algorithm", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/cheapest-flights-within-k-stops/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.9", "name": "Floyd-Warshall Algorithm", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.10", "name": "Minimum Spanning Tree (Prim's/Kruskal's)", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/min-cost-to-connect-all-points/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.11", "name": "Disjoint Set Union (DSU)", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.12", "name": "Number of Islands", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/number-of-islands/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.13", "name": "Rotten Oranges", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/rotting-oranges/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "14.14", "name": "Word Ladder", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/word-ladder/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Dynamic Programming",
+      "topics": [
+        { "id": "15.1", "name": "Climbing Stairs (Fibonacci DP)", "difficulty": "Easy", "leetcode": "https://leetcode.com/problems/climbing-stairs/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.2", "name": "Frog Jump", "difficulty": "Easy", "leetcode": "https://practice.geeksforgeeks.org/problems/minimal-cost/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.3", "name": "House Robber", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/house-robber/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.4", "name": "House Robber II", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/house-robber-ii/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.5", "name": "0/1 Knapsack", "difficulty": "Medium", "leetcode": "https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.6", "name": "Subset Sum Problem", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/partition-equal-subset-sum/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.7", "name": "Coin Change", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/coin-change/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.8", "name": "Coin Change II (Count Ways)", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/coin-change-ii/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.9", "name": "Longest Common Subsequence", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/longest-common-subsequence/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.10", "name": "Edit Distance", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/edit-distance/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.11", "name": "Longest Palindromic Subsequence", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/longest-palindromic-subsequence/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.12", "name": "Matrix Chain Multiplication", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/burst-balloons/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.13", "name": "Longest Increasing Subsequence", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/longest-increasing-subsequence/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.14", "name": "Partition DP (Palindrome Partition)", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/palindrome-partitioning-ii/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "15.15", "name": "Word Break", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/word-break/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Tries",
+      "topics": [
+        { "id": "16.1", "name": "Implement Trie (Insert/Search/StartsWith)", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/implement-trie-prefix-tree/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "16.2", "name": "Longest Word in Dictionary", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/longest-word-in-dictionary/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "16.3", "name": "Maximum XOR of Two Numbers", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "String Algorithms",
+      "topics": [
+        { "id": "17.1", "name": "Z-Function", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "17.2", "name": "KMP Algorithm (Revisit)", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" },
+        { "id": "17.3", "name": "Shortest Palindrome", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/shortest-palindrome/", "video": "https://youtu.be/rZ41y93P2Qo", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "SDE Sheet (Interview Must-Do)",
+      "topics": [
+        { "id": "18.1", "name": "Trapping Rain Water", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/trapping-rain-water/", "video": "https://youtu.be/0bHoB32fuj0", "status": "not_started" },
+        { "id": "18.2", "name": "LRU Cache", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/lru-cache/", "video": "https://youtu.be/0bHoB32fuj0", "status": "not_started" },
+        { "id": "18.3", "name": "Clone Graph", "difficulty": "Medium", "leetcode": "https://leetcode.com/problems/clone-graph/", "video": "https://youtu.be/0bHoB32fuj0", "status": "not_started" },
+        { "id": "18.4", "name": "Regular Expression Matching", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/regular-expression-matching/", "video": "https://youtu.be/0bHoB32fuj0", "status": "not_started" },
+        { "id": "18.5", "name": "Serialize and Deserialize BT", "difficulty": "Hard", "leetcode": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/", "video": "https://youtu.be/0bHoB32fuj0", "status": "not_started" }
+      ]
     }
   ]
 }

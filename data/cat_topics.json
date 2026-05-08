@@ -1,84 +1,81 @@
 {
-  "qaTopics": [
-    {
-      "id": "QA-1",
-      "topic": "Number System",
-      "weightage": "High",
-      "status": "Not Started",
-      "youtube": [
-        {
-          "label": "Rodha - Number System",
-          "url": "https://www.youtube.com/@Rodha"
-        }
-      ],
-      "practice": [
-        {
-          "label": "iQuanta Daily Target",
-          "url": "https://www.iquanta.in/cat-daily-target"
-        },
-        {
-          "label": "Cracku Daily Target",
-          "url": "https://cracku.in/cat-daily-target"
-        }
-      ]
-    },
-    {
-      "id": "QA-2",
-      "topic": "Percentages & Profit/Loss",
-      "weightage": "Medium",
-      "status": "Not Started",
-      "youtube": [
-        {
-          "label": "Rodha - Percentages",
-          "url": "https://www.youtube.com/@Rodha"
-        }
-      ]
+  "meta": {
+    "examDate": "2026-11-29",
+    "resources": {
+      "iQuanta": "https://www.iquanta.in/cat-daily-target",
+      "cracku": "https://cracku.in/cat-daily-target",
+      "crackuMocks": "https://cracku.in/cat-mock-test",
+      "crackuPYQ": "https://cracku.in/cat-previous-papers",
+      "rodhaYT": "https://www.youtube.com/@Rodha",
+      "rodhaMarathons": "https://www.youtube.com/playlist?list=PLG4bwc5fquzjy4HUcR0c-mGbHvA8gueDG",
+      "iquantaYT": "https://www.youtube.com/@iQuanta",
+      "2IIM": "https://www.youtube.com/@2IIMCATOnline",
+      "hindueditorials": "https://www.thehindu.com/opinion/editorial/"
     }
+  },
+  "qa": [
+    { "id": "QA1", "topic": "Number System", "weightage": "8%", "difficulty": "Medium", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA2", "topic": "Percentages", "weightage": "6%", "difficulty": "Easy", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA3", "topic": "Profit & Loss", "weightage": "5%", "difficulty": "Easy", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA4", "topic": "Simple & Compound Interest", "weightage": "4%", "difficulty": "Easy", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA5", "topic": "Ratio & Proportion", "weightage": "5%", "difficulty": "Easy", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA6", "topic": "Time, Speed & Distance", "weightage": "8%", "difficulty": "Medium", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA7", "topic": "Time & Work", "weightage": "6%", "difficulty": "Medium", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA8", "topic": "Averages & Mixtures", "weightage": "5%", "difficulty": "Easy", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA9", "topic": "Algebra & Equations", "weightage": "7%", "difficulty": "Medium", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA10", "topic": "Geometry & Mensuration", "weightage": "8%", "difficulty": "Hard", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA11", "topic": "Permutations & Combinations", "weightage": "6%", "difficulty": "Hard", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA12", "topic": "Probability", "weightage": "5%", "difficulty": "Hard", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA13", "topic": "Number Series & Progressions", "weightage": "5%", "difficulty": "Medium", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA14", "topic": "Functions & Graphs", "weightage": "5%", "difficulty": "Hard", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "QA15", "topic": "Logs & Surds", "weightage": "4%", "difficulty": "Hard", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "iquanta": "https://www.iquanta.in/cat-daily-target", "status": "not_started", "accuracy": 0 }
   ],
-  "dilrTopics": [
-    {
-      "id": "DL-1",
-      "topic": "Seating Arrangements",
-      "weightage": "High",
-      "status": "Not Started",
-      "youtube": [
-        {
-          "label": "Rodha - DILR",
-          "url": "https://www.youtube.com/@Rodha"
-        }
-      ],
-      "practice": [
-        {
-          "label": "Cracku DILR Sets",
-          "url": "https://cracku.in/cat-daily-target"
-        }
-      ]
-    }
+  "dilr": [
+    { "id": "DILR1", "topic": "Seating Arrangement (Linear)", "weightage": "High", "difficulty": "Medium", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "DILR2", "topic": "Seating Arrangement (Circular)", "weightage": "High", "difficulty": "Medium", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "DILR3", "topic": "Data Tables", "weightage": "High", "difficulty": "Easy", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "DILR4", "topic": "Caselets (Puzzles)", "weightage": "Very High", "difficulty": "Hard", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "DILR5", "topic": "Bar Graphs & Line Charts", "weightage": "Medium", "difficulty": "Easy", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "DILR6", "topic": "Pie Charts", "weightage": "Medium", "difficulty": "Easy", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "DILR7", "topic": "Venn Diagrams", "weightage": "Medium", "difficulty": "Medium", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "DILR8", "topic": "Syllogisms", "weightage": "Medium", "difficulty": "Medium", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "DILR9", "topic": "Blood Relations", "weightage": "Low", "difficulty": "Easy", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "DILR10", "topic": "Input-Output", "weightage": "Low", "difficulty": "Medium", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "DILR11", "topic": "Network & Route Diagrams", "weightage": "High", "difficulty": "Hard", "video": "https://www.youtube.com/@iQuanta", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 }
   ],
-  "varcTopics": [
-    {
-      "id": "VA-1",
-      "topic": "Reading Comprehension",
-      "weightage": "Very High",
-      "status": "Not Started",
-      "youtube": [
-        {
-          "label": "Rodha - VARC / RC",
-          "url": "https://www.youtube.com/@Rodha"
-        }
-      ],
-      "practice": [
-        {
-          "label": "iQuanta VARC practice",
-          "url": "https://www.iquanta.in/cat-daily-target"
-        }
-      ],
-      "reading": [
-        {
-          "label": "The Hindu Editorials",
-          "url": "https://www.thehindu.com/opinion/editorial/"
-        }
-      ]
-    }
+  "varc": [
+    { "id": "VARC1", "topic": "Reading Comprehension — Inference", "weightage": "Very High", "difficulty": "Hard", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "reading": "https://www.thehindu.com/opinion/editorial/", "status": "not_started", "accuracy": 0 },
+    { "id": "VARC2", "topic": "Reading Comprehension — Main Idea", "weightage": "Very High", "difficulty": "Hard", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "reading": "https://www.thehindu.com/opinion/editorial/", "status": "not_started", "accuracy": 0 },
+    { "id": "VARC3", "topic": "Para Jumbles (TITA)", "weightage": "High", "difficulty": "Hard", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "VARC4", "topic": "Para Summary", "weightage": "High", "difficulty": "Medium", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "VARC5", "topic": "Odd Sentence Out", "weightage": "High", "difficulty": "Medium", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "VARC6", "topic": "Vocabulary in Context", "weightage": "Medium", "difficulty": "Medium", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "VARC7", "topic": "Fill in the Blanks", "weightage": "Low", "difficulty": "Easy", "video": "https://www.youtube.com/@Rodha", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 },
+    { "id": "VARC8", "topic": "Critical Reasoning", "weightage": "High", "difficulty": "Hard", "video": "https://www.youtube.com/watch?v=xKN6-M2VlCs", "practice": "https://cracku.in/cat-daily-target", "status": "not_started", "accuracy": 0 }
+  ],
+  "mockSchedule": [
+    { "date": "2026-09-06", "platform": "Cracku", "link": "https://cracku.in/cat-mock-test", "done": false },
+    { "date": "2026-09-13", "platform": "iQuanta", "link": "https://www.iquanta.in/", "done": false },
+    { "date": "2026-09-20", "platform": "Cracku", "link": "https://cracku.in/cat-mock-test", "done": false },
+    { "date": "2026-09-27", "platform": "2IIM", "link": "https://mockcat.2iim.com", "done": false },
+    { "date": "2026-10-04", "platform": "Cracku", "link": "https://cracku.in/cat-mock-test", "done": false },
+    { "date": "2026-10-11", "platform": "iQuanta", "link": "https://www.iquanta.in/", "done": false },
+    { "date": "2026-10-18", "platform": "Cracku", "link": "https://cracku.in/cat-mock-test", "done": false },
+    { "date": "2026-10-25", "platform": "2IIM", "link": "https://mockcat.2iim.com", "done": false },
+    { "date": "2026-11-01", "platform": "Cracku", "link": "https://cracku.in/cat-mock-test", "done": false },
+    { "date": "2026-11-08", "platform": "iQuanta", "link": "https://www.iquanta.in/", "done": false },
+    { "date": "2026-11-15", "platform": "Cracku", "link": "https://cracku.in/cat-mock-test", "done": false },
+    { "date": "2026-11-22", "platform": "2IIM", "link": "https://mockcat.2iim.com", "done": false }
+  ],
+  "pyqLinks": [
+    { "year": "CAT 2024", "link": "https://cracku.in/cat-previous-papers" },
+    { "year": "CAT 2023", "link": "https://cracku.in/cat-previous-papers" },
+    { "year": "CAT 2022", "link": "https://cracku.in/cat-previous-papers" },
+    { "year": "CAT 2021", "link": "https://cracku.in/cat-previous-papers" },
+    { "year": "CAT 2020", "link": "https://cracku.in/cat-previous-papers" },
+    { "year": "CAT 2019", "link": "https://cracku.in/cat-previous-papers" },
+    { "year": "CAT 2018", "link": "https://cracku.in/cat-previous-papers" },
+    { "year": "CAT 2017", "link": "https://cracku.in/cat-previous-papers" },
+    { "year": "All Papers (2015-2024)", "link": "https://cracku.in/cat-previous-papers" }
   ]
 }

@@ -1,63 +1,170 @@
 {
+  "meta": {
+    "source": "CodingShuttle Java+Spring Boot 0 to 100 + Free YouTube Resources",
+    "freeResources": [
+      { "name": "LearnCodeWithDurgesh", "url": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists" },
+      { "name": "CodeSnippet by Chetan Ghate", "url": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists" },
+      { "name": "Telusko (Java)", "url": "https://www.youtube.com/watch?v=8kvqSY1-W5Y" },
+      { "name": "Amigoscode Spring Boot", "url": "https://www.youtube.com/watch?v=9SGDpanrc8U" }
+    ]
+  },
   "modules": [
     {
       "id": 1,
-      "name": "Spring & Spring Boot Fundamentals",
-      "description": "IOC, beans, dependency injection, project structure, auto-configuration.",
-      "status": "Not Started",
-      "tags": ["Spring", "Basics"],
-      "resources": [
-        {
-          "label": "Durgesh - Spring Boot Basics",
-          "url": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists"
-        },
-        {
-          "label": "Spring Core Concepts (docs)",
-          "url": "https://docs.spring.io/spring-framework/reference/core.html"
-        }
+      "title": "Java Fundamentals",
+      "interviewWeight": "High",
+      "topics": [
+        { "id": "J1.1", "name": "JDK, JRE, JVM — Architecture", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between JDK, JRE, and JVM?", "status": "not_started" },
+        { "id": "J1.2", "name": "Data Types, Variables, Operators", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What are primitive vs reference data types in Java?", "status": "not_started" },
+        { "id": "J1.3", "name": "Control Flow (if/else, switch, loops)", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between while and do-while loop?", "status": "not_started" },
+        { "id": "J1.4", "name": "Arrays and Strings", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "Why is String immutable in Java?", "status": "not_started" },
+        { "id": "J1.5", "name": "Methods, Recursion, Varargs", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is method overloading vs method overriding?", "status": "not_started" }
       ]
     },
     {
       "id": 2,
-      "name": "REST APIs with Spring Boot",
-      "description": "Controllers, RequestMapping, ResponseEntity, validation, exception handling.",
-      "status": "Not Started",
-      "tags": ["REST", "HTTP"],
-      "resources": [
-        {
-          "label": "Durgesh - Spring REST playlist",
-          "url": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists"
-        },
-        {
-          "label": "Chetan Ghate - Spring Boot REST",
-          "url": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists"
-        }
+      "title": "Object-Oriented Programming",
+      "interviewWeight": "Very High",
+      "topics": [
+        { "id": "J2.1", "name": "Classes, Objects, Constructors", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between a class and an object?", "status": "not_started" },
+        { "id": "J2.2", "name": "Inheritance (extends)", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "Does Java support multiple inheritance? Why not?", "status": "not_started" },
+        { "id": "J2.3", "name": "Polymorphism (Compile-time & Runtime)", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between compile-time and runtime polymorphism?", "status": "not_started" },
+        { "id": "J2.4", "name": "Encapsulation & Abstraction", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between abstract class and interface?", "status": "not_started" },
+        { "id": "J2.5", "name": "Interface & Abstract Class", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "Can an interface have a constructor?", "status": "not_started" },
+        { "id": "J2.6", "name": "static, final, super, this keywords", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between static and instance methods?", "status": "not_started" }
       ]
     },
     {
       "id": 3,
-      "name": "Spring Data JPA & Databases",
-      "description": "Repositories, entities, relationships, MySQL/Postgres integration.",
-      "status": "Not Started",
-      "tags": ["JPA", "Database"],
-      "resources": [
-        {
-          "label": "Spring Data JPA Reference",
-          "url": "https://docs.spring.io/spring-data/jpa/reference/"
-        }
+      "title": "Exception Handling",
+      "interviewWeight": "High",
+      "topics": [
+        { "id": "J3.1", "name": "try-catch-finally", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between checked and unchecked exceptions?", "status": "not_started" },
+        { "id": "J3.2", "name": "Custom Exceptions", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "How do you create a custom exception in Java?", "status": "not_started" },
+        { "id": "J3.3", "name": "throws vs throw", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between throw and throws?", "status": "not_started" }
       ]
     },
     {
       "id": 4,
-      "name": "Spring Security (Auth & JWT)",
-      "description": "Authentication, authorization, filters, JWT based login.",
-      "status": "Not Started",
-      "tags": ["Security", "JWT"],
-      "resources": [
-        {
-          "label": "Durgesh - Spring Security & JWT",
-          "url": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists"
-        }
+      "title": "Collections Framework",
+      "interviewWeight": "Very High",
+      "topics": [
+        { "id": "J4.1", "name": "List: ArrayList vs LinkedList", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between ArrayList and LinkedList?", "status": "not_started" },
+        { "id": "J4.2", "name": "Set: HashSet vs TreeSet vs LinkedHashSet", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "How does HashSet internally work?", "status": "not_started" },
+        { "id": "J4.3", "name": "Map: HashMap vs TreeMap vs LinkedHashMap", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "How does HashMap handle collisions? What is load factor?", "status": "not_started" },
+        { "id": "J4.4", "name": "Queue, Deque, PriorityQueue", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between Queue and Deque?", "status": "not_started" },
+        { "id": "J4.5", "name": "Iterator & ListIterator", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between Iterator and ListIterator?", "status": "not_started" },
+        { "id": "J4.6", "name": "Comparable vs Comparator", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between Comparable and Comparator?", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Java 8+ Features",
+      "interviewWeight": "Very High",
+      "topics": [
+        { "id": "J5.1", "name": "Lambda Expressions", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is a lambda expression? Give an example.", "status": "not_started" },
+        { "id": "J5.2", "name": "Functional Interfaces", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between Predicate, Function, Consumer, Supplier?", "status": "not_started" },
+        { "id": "J5.3", "name": "Stream API", "difficulty": "Hard", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between map() and flatMap() in Streams?", "status": "not_started" },
+        { "id": "J5.4", "name": "Optional Class", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is Optional? Why is it used?", "status": "not_started" },
+        { "id": "J5.5", "name": "Default & Static Methods in Interface", "difficulty": "Easy", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What are default methods in Java 8 interfaces?", "status": "not_started" },
+        { "id": "J5.6", "name": "Method References", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What are the 4 types of method references?", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Multithreading & Concurrency",
+      "interviewWeight": "High",
+      "topics": [
+        { "id": "J6.1", "name": "Thread Creation (Thread class vs Runnable)", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between Thread class and Runnable interface?", "status": "not_started" },
+        { "id": "J6.2", "name": "Thread Lifecycle & States", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What are the different states of a thread?", "status": "not_started" },
+        { "id": "J6.3", "name": "synchronized keyword", "difficulty": "Medium", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is synchronization and why is it needed?", "status": "not_started" },
+        { "id": "J6.4", "name": "ExecutorService & ThreadPool", "difficulty": "Hard", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is ExecutorService and how is it used?", "status": "not_started" },
+        { "id": "J6.5", "name": "volatile & atomic variables", "difficulty": "Hard", "video": "https://www.youtube.com/@LearnCodeWithDurgesh/playlists", "interviewQ": "What is the difference between volatile and synchronized?", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Spring Framework Core",
+      "interviewWeight": "Very High",
+      "topics": [
+        { "id": "J7.1", "name": "IoC Container & Dependency Injection", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is IoC and Dependency Injection? Explain with example.", "status": "not_started" },
+        { "id": "J7.2", "name": "@Component, @Service, @Repository, @Controller", "difficulty": "Easy", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between @Component, @Service, @Repository?", "status": "not_started" },
+        { "id": "J7.3", "name": "@Autowired, @Qualifier, @Primary", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between @Autowired and @Qualifier?", "status": "not_started" },
+        { "id": "J7.4", "name": "Bean Lifecycle & Scopes", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What are different bean scopes in Spring? What is singleton vs prototype?", "status": "not_started" },
+        { "id": "J7.5", "name": "@Configuration & @Bean", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between @Component and @Bean?", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Spring Boot",
+      "interviewWeight": "Very High",
+      "topics": [
+        { "id": "J8.1", "name": "Spring Boot Auto-Configuration", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "How does Spring Boot auto-configuration work?", "status": "not_started" },
+        { "id": "J8.2", "name": "application.properties / application.yml", "difficulty": "Easy", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between application.properties and application.yml?", "status": "not_started" },
+        { "id": "J8.3", "name": "Profiles (@Profile, spring.profiles.active)", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What are Spring profiles and when do you use them?", "status": "not_started" },
+        { "id": "J8.4", "name": "Actuator (health, metrics, info)", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is Spring Boot Actuator? Name some important endpoints.", "status": "not_started" },
+        { "id": "J8.5", "name": "DevTools & Hot Reload", "difficulty": "Easy", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is Spring Boot DevTools?", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Spring MVC & REST API",
+      "interviewWeight": "Very High",
+      "topics": [
+        { "id": "J9.1", "name": "@RestController, @GetMapping, @PostMapping etc.", "difficulty": "Easy", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between @Controller and @RestController?", "status": "not_started" },
+        { "id": "J9.2", "name": "@PathVariable, @RequestParam, @RequestBody", "difficulty": "Easy", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between @PathVariable and @RequestParam?", "status": "not_started" },
+        { "id": "J9.3", "name": "ResponseEntity & HTTP Status Codes", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is ResponseEntity and why do we use it?", "status": "not_started" },
+        { "id": "J9.4", "name": "Exception Handling in REST (GlobalExceptionHandler)", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "How do you handle exceptions globally in Spring Boot?", "status": "not_started" },
+        { "id": "J9.5", "name": "DTO Pattern & Validation (@Valid, @NotNull)", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is a DTO and why is it used?", "status": "not_started" },
+        { "id": "J9.6", "name": "CORS Configuration", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is CORS? How do you configure it in Spring Boot?", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Spring Data JPA & Hibernate",
+      "interviewWeight": "Very High",
+      "topics": [
+        { "id": "J10.1", "name": "JPA Entities, @Entity, @Table, @Id", "difficulty": "Easy", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between JPA and Hibernate?", "status": "not_started" },
+        { "id": "J10.2", "name": "JpaRepository, CrudRepository", "difficulty": "Easy", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between JpaRepository and CrudRepository?", "status": "not_started" },
+        { "id": "J10.3", "name": "JPQL & @Query", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is JPQL? How does it differ from SQL?", "status": "not_started" },
+        { "id": "J10.4", "name": "Entity Relationships (@OneToMany, @ManyToOne)", "difficulty": "Hard", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between EAGER and LAZY loading?", "status": "not_started" },
+        { "id": "J10.5", "name": "Transactions (@Transactional)", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is @Transactional and how does it work?", "status": "not_started" },
+        { "id": "J10.6", "name": "Pagination & Sorting", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "How do you implement pagination in Spring Data JPA?", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Spring Security & JWT",
+      "interviewWeight": "High",
+      "topics": [
+        { "id": "J11.1", "name": "Authentication vs Authorization", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between authentication and authorization?", "status": "not_started" },
+        { "id": "J11.2", "name": "SecurityFilterChain & HttpSecurity", "difficulty": "Hard", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "How does Spring Security filter chain work?", "status": "not_started" },
+        { "id": "J11.3", "name": "JWT Token Generation & Validation", "difficulty": "Hard", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is JWT? What are its three parts?", "status": "not_started" },
+        { "id": "J11.4", "name": "UserDetailsService & UserDetails", "difficulty": "Hard", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is UserDetailsService in Spring Security?", "status": "not_started" },
+        { "id": "J11.5", "name": "Role-based Access Control", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "How do you implement role-based access control in Spring Security?", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Microservices",
+      "interviewWeight": "Medium",
+      "topics": [
+        { "id": "J12.1", "name": "Microservices Architecture Concepts", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between monolith and microservices architecture?", "status": "not_started" },
+        { "id": "J12.2", "name": "Service Discovery (Eureka)", "difficulty": "Hard", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is service discovery and how does Eureka work?", "status": "not_started" },
+        { "id": "J12.3", "name": "API Gateway (Spring Cloud Gateway)", "difficulty": "Hard", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is an API Gateway and what are its benefits?", "status": "not_started" },
+        { "id": "J12.4", "name": "Feign Client & RestTemplate", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between Feign Client and RestTemplate?", "status": "not_started" },
+        { "id": "J12.5", "name": "Circuit Breaker (Resilience4j)", "difficulty": "Hard", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is a circuit breaker pattern?", "status": "not_started" }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Docker & Deployment",
+      "interviewWeight": "Medium",
+      "topics": [
+        { "id": "J13.1", "name": "Docker Basics (Image, Container, Volume)", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is the difference between Docker image and container?", "status": "not_started" },
+        { "id": "J13.2", "name": "Dockerfile for Spring Boot App", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "How do you containerize a Spring Boot application?", "status": "not_started" },
+        { "id": "J13.3", "name": "Docker Compose", "difficulty": "Medium", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is Docker Compose and when do you use it?", "status": "not_started" },
+        { "id": "J13.4", "name": "CI/CD Basics (GitHub Actions)", "difficulty": "Hard", "video": "https://www.youtube.com/@CodeSnippetByChetanGhate/playlists", "interviewQ": "What is CI/CD? How does GitHub Actions work?", "status": "not_started" }
       ]
     }
   ]
